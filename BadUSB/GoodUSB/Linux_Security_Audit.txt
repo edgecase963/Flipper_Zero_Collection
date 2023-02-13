@@ -1,0 +1,102 @@
+REM Author: edgecase963
+REM Installs rkhunter and lynis
+REM Runs both and saves the output to several log files and sends them to a discord webhook
+REM Replace "WEBHOOK_URL" with your Discord webhook URL
+
+
+CTRL-ALT t
+DELAY 800
+F11
+
+
+REM Stage directory for logs and scripts
+STRING cd ~/
+ENTER
+STRING mkdir ~/security_checkup
+ENTER
+STRING cd ~/security_checkup
+ENTER
+
+
+REM Installation
+STRING echo "apt-get install rkhunter lynis curl -y" > install.sh && chmod +x install.sh
+ENTER
+
+
+REM Rkhunter
+STRING echo "rkhunter --check --logfile rkhunter.log --skip-keypress" > run_rkhunter.sh
+ENTER
+STRING chmod +x run_rkhunter.sh
+ENTER
+
+
+REM Lynis
+STRING echo "lynis audit system --logfile lynis.log --report-file lynis.dat" > run_lynis.sh
+ENTER
+STRING chmod +x run_lynis.sh
+ENTER
+
+
+REM Create Discord webhook scripts
+STRING echo "url='WEBHOOK_URL'" > send_rkhunter.sh
+ENTER
+STRING echo "file='rkhunter.log'" >> send_rkhunter.sh
+ENTER
+STRING echo 'curl -F "file=@$file" $url' >> send_rkhunter.sh
+ENTER
+STRING chmod +x send_rkhunter.sh
+ENTER
+
+STRING echo "url='WEBHOOK_URL'" > send_lynis.sh
+ENTER
+STRING echo "file='lynis.log'" >> send_lynis.sh
+ENTER
+STRING echo "file2='lynis.dat'" >> send_lynis.sh
+ENTER
+STRING echo 'curl -F "file=@$file" $url' >> send_lynis.sh
+ENTER
+STRING echo 'curl -F "file=@$file2" $url' >> send_lynis.sh
+ENTER
+STRING chmod +x send_lynis.sh
+ENTER
+
+
+REM Create cleanup script
+STRING echo "rm ~/security_checkup/install.sh" > cleanup.sh
+ENTER
+STRING echo "rm ~/security_checkup/run_rkhunter.sh" >> cleanup.sh
+ENTER
+STRING echo "rm ~/security_checkup/run_lynis.sh" >> cleanup.sh
+ENTER
+STRING echo "rm ~/security_checkup/send_rkhunter.sh" >> cleanup.sh
+ENTER
+STRING echo "rm ~/security_checkup/send_lynis.sh" >> cleanup.sh
+ENTER
+STRING echo "rm ~/security_checkup/cleanup.sh" >> cleanup.sh
+ENTER
+STRING echo "rm ~/security_checkup/execute.sh" >> cleanup.sh
+ENTER
+STRING chmod +x cleanup.sh
+ENTER
+
+
+REM Execution script
+STRING echo "sudo ./install.sh" > execute.sh
+ENTER
+STRING echo "sudo ./run_rkhunter.sh" >> execute.sh
+ENTER
+STRING echo "sudo ./run_lynis.sh" >> execute.sh
+ENTER
+STRING echo "sudo ./send_rkhunter.sh" >> execute.sh
+ENTER
+STRING echo "sudo ./send_lynis.sh" >> execute.sh
+ENTER
+STRING echo "./cleanup.sh" >> execute.sh
+ENTER
+STRING chmod +x execute.sh
+ENTER
+
+
+REM Execution
+STRING ./execute.sh && exit
+ENTER
