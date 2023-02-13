@@ -24,11 +24,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "CPU INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING lscpu >> /tmp/Linux_Recon.txt
@@ -37,11 +35,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "BLOCK INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING lsblk >> /tmp/Linux_Recon.txt
@@ -50,11 +46,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "USB INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING lsusb >> /tmp/Linux_Recon.txt
@@ -63,11 +57,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "NETWORK INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING ifconfig >> /tmp/Linux_Recon.txt
@@ -76,11 +68,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "ROUTE INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING route -n >> /tmp/Linux_Recon.txt
@@ -89,11 +79,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "MEMORY INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING free -h >> /tmp/Linux_Recon.txt
@@ -102,11 +90,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "FILESYSTEM INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING df -h >> /tmp/Linux_Recon.txt
@@ -115,11 +101,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "PROCESS INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING ps -aux >> /tmp/Linux_Recon.txt
@@ -128,11 +112,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "HISTORY INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING history >> /tmp/Linux_Recon.txt
@@ -141,11 +123,9 @@ DELAY 100
 
 STRING echo " " >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo "---------------------" >> /tmp/Linux_Recon.txt
-ENTER
 STRING echo "HARDWARE INFORMATION" >> /tmp/Linux_Recon.txt
 ENTER
-STRING echo " " >> /tmp/Linux_Recon.txt
+STRING echo "---------------------" >> /tmp/Linux_Recon.txt
 ENTER
 
 STRING lshw -short >> /tmp/Linux_Recon.txt
