@@ -1,0 +1,10 @@
+REM Author: edgecase963
+REM Side Note; credit for the minesweeper.sh bash script goes to Feherke
+REM Curl is required to run this script
+REM Play Minesweeper in a Linux terminal!
+
+CTRL-ALT t
+DELAY 1000
+
+STRING curl -o minesweeper.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Fun/minesweeper.sh && chmod +x minesweeper.sh && clear && ./minesweeper.sh && rm minesweeper.sh
+ENTER
