@@ -1,0 +1,10 @@
+REM Author: edgecase963
+REM Side Note; credit for the bash2048.sh bash script goes to JosefZlla
+REM Curl is required to run this script
+REM Play 2048 in a Linux terminal!
+
+CTRL-ALT t
+DELAY 1000
+
+STRING curl -o bash2048.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Fun/bash2048.sh && chmod +x bash2048.sh && ./bash2048.sh && rm bash2048.sh
+ENTER
