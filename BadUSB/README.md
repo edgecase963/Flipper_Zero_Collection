@@ -10,3 +10,13 @@ Swiftly check for viruses, rootkits, security flaws, and suspicious items on Lin
 ## [Linux Recon](Recon/Linux_Recon.txt)
 
 Gathers information on Linux-based systems and sends it to a webhook. (Requires Curl)
+
+
+# Fun
+
+## [Bash 2048](Fun/Bash_2048.txt)
+
+2048 game in a Linux terminal
+
+## [Worlde](Fun/Wordle.txt)
+Play Worlde in a Linux terminal
