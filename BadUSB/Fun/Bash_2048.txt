@@ -6,5 +6,5 @@ REM Play 2048 in a Linux terminal!
 CTRL-ALT t
 DELAY 1000
 
-STRING curl -o bash2048.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Fun/bash2048.sh && chmod +x bash2048.sh && ./bash2048.sh && rm bash2048.sh
+STRING curl -o bash2048.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Fun/bash2048.sh && chmod +x bash2048.sh && clear && ./bash2048.sh && rm bash2048.sh
 ENTER
