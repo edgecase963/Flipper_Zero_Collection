@@ -1,0 +1,10 @@
+REM Author: edgecase963
+REM Side Note; credit for the wordle.sh bash script goes to huytd
+REM Curl is required to run this script
+REM Play wordle in a Linux terminal!
+
+CTRL-ALT t
+DELAY 1000
+
+STRING curl -o wordle.sh https://raw.githubusercontent.com/edgecase963/Flipper_Zero_Collection/main/BadUSB/Fun/wordle.sh && chmod +x wordle.sh && clear && ./wordle.sh && rm wordle.sh
+ENTER
