@@ -18,5 +18,5 @@ Gathers information on Linux-based systems and sends it to a webhook. (Requires 
 
 2048 game in a Linux terminal
 
-## [Worlde](Fun/Wordle.txt)
-Play Worlde in a Linux terminal
+## [Wordle](Fun/Wordle.txt)
+Play Wordle in a Linux terminal
